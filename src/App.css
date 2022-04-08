@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: montserrat;
+  }
+.center{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header{
+  padding: 40px 0;
+  background-color: #7159c1;
+  min-height: 400px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu h3{
+  color: white;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+.menu a{
+  
+  color: whitesmoke;
+  text-decoration: none;
+  border: 1px solid whitesmoke;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+.menu a:hover{
+  background-color: whitesmoke;
+  color: #7159c1;
+  transition: 450ms;
+  
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  margin-top: 7px;  
+}
+
+nav ul li a{
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight:normal;
+  position: relative;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border: none !important;  
+  }
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 450ms;
+  border-radius:5px;
+  
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+.content-video{
+  display: flex;
+  width: 100%;
+  margin: 10px auto;
+  max-width: 600px;
+  max-height: 600px;
+  text-align: center;
+}
+
+.videohome{
+  width: 100%;
+  height: 350px;
+  border-radius: 5px;
+  margin: 40px auto;
+  background-color: rgb(29, 28, 28);
+}
+
+.videohome video{
+  width: 100%;
+  height: 100%;
+}
+
+.item{
+  min-height: 40px;
+  min-width: 12rem;
+  padding: 40px;
+  scroll-behavior: smooth;
+}
+
+.item img{
+  width: 163px;
+  height: 250px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+.inner-carousel{
+  display: flex;
+  
+}
+.carousel{
+  cursor: grab;
+  overflow: hidden;
+
+}
+
+.heading{
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding-top: 3rem;
+  font-weight: bold;
+  color: rgb(255, 187, 0);
+  text-transform: none;
+}
+.heading span{
+  color: #7159c1;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
